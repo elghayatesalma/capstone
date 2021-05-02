@@ -46,8 +46,8 @@ window.onload = () => {
 
                     // add place name
                     const placeText = document.createElement('a-link');
-                    placeText.setAttribute('gps-entity-place', 33.538350; -5.108059;);
-                    placeText.setAttribute('title', place.building8b);
+                    placeText.setAttribute('gps-entity-place', '33.538516,; -5.107958');
+                    placeText.setAttribute('title', 'place.building8b');
                     placeText.setAttribute('scale', '15 15 15');
                     
                     placeText.addEventListener('loaded', () => {
