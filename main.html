@@ -17,7 +17,9 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      
+      <a-assets>
+        <audio id="trial" src="trial.mp3" preload="auto"></audio>
+      </a-assets>
    
         <a-entity 
         scale="10 10 10"
@@ -30,7 +32,7 @@
         shader:msdf"
         geometry="primitive: plane; width:auto; height:auto"
         material="color: #689F38; shader:flat; visible: true"
-        >
+        sound="src: #trial; autoplay:true">
         
         </a-entity>
       <a-camera gps-camera rotation-reader> </a-camera>
